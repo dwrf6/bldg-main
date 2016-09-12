@@ -1,5 +1,6 @@
 .DS_Store
 *.log
-node_modules/*
-vender/*
+/node_modules/*
+/vender/*
 LICENCE
+sftp-config.json
