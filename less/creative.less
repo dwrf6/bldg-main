@@ -30,6 +30,14 @@ a {
         color: darken(@theme-primary, 10%);
     }
 }
+.hover-bright {
+    .transition-all;
+    color: @theme-primary;
+    &:hover,
+    &:focus {
+        color: darken(@theme-gold, 10%);
+    }
+}
 
 h1,
 h2,
@@ -164,8 +172,7 @@ header {
     width: 100%;
     min-height: auto;
     .background-cover;
-    background-position: center;
-    background: linear-gradient(180deg, rgba(65, 90, 121, 1), rgba(65, 90, 121, .4)), url('../img/header-e.jpg') no-repeat center center fixed;
+    background: linear-gradient(180deg, rgba(65, 90, 121, 1), rgba(65, 90, 121, .4)), url('../img/header-e.jpg') center center fixed;
     text-align: center;
     color: white;
     .header-content {
@@ -361,4 +368,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+@-ms-viewport{
+  width: device-width;
 }

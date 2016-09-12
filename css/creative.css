@@ -29,6 +29,16 @@ a:hover,
 a:focus {
   color: #2f4158;
 }
+.hover-bright {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #415a79;
+}
+.hover-bright:hover,
+.hover-bright:focus {
+  color: #ccac00;
+}
 h1,
 h2,
 h3,
@@ -154,8 +164,7 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-position: center;
-  background: linear-gradient(180deg, #415a79, rgba(65, 90, 121, 0.4)), url('../img/header-e.jpg') no-repeat center center fixed;
+  background: linear-gradient(180deg, #415a79, rgba(65, 90, 121, 0.4)), url('../img/header-e.jpg') center center fixed;
   text-align: center;
   color: white;
 }
@@ -416,4 +425,7 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+@-ms-viewport {
+  width: device-width;
 }
